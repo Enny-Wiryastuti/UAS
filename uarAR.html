@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+
+        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    </head>
+
+    <body>
+
+        <a-scene embedded arjs>
+            <a-entity scale=".2.2.2">
+                <a-entity gltf-model="assets//Model/black_cat.glb" scale="-1 1 1"position= "0 1 0" rotation="0 2 0" 
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 7000">
+                </a-entity>
+                <a-image src="assets/img/WhatsApp Image 2023-07-21 at 23.35.47.jpg"
+                position= "0 1 0"
+                scale= "1 1 1"
+                rotation="0 2 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 7000">
+            </a-image>
+         <a-marker-camera preset='hiro'></a-marker-camera>
+         </a-scene>    
+    </body>
+
+</html> 
